@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "Botbanhang",
+  "version": "2.3.2",
+  "description": "Theo dõi KPI thời gian Chủ động và Bị động từ các task trong ngày.",
+  "permissions": [
+    "storage",
+    "notifications",
+    "activeTab",
+    "scripting",
+    "webNavigation",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Task KPI Hôm Nay",
+    "default_popup": "popup.html"
+  },
+  "options_page": "src/options/options.html",
+  "content_scripts": [
+    {
+      "js": [
+        "assets/config.js-sX9choKx.js",
+        "assets/duration.js-loader-qGtPEMj_.js",
+        "assets/calculator.js-loader-2FtiplFB.js",
+        "assets/storage.js-h93Mtc7C.js",
+        "assets/logger.js-D3ax7xsl.js",
+        "assets/taskIdentity.js-loader-CLAJusqA.js",
+        "assets/tasks.js-Cg3caWm1.js",
+        "assets/timelineDebug.js-loader-uY9OfYK_.js",
+        "assets/taskParser.js-loader-B_L83yr8.js",
+        "assets/content.js-M9DgwEsi.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "resources": [
+        "assets/config.js-sX9choKx.js",
+        "assets/rolldown-runtime-CbXtAM7H.js",
+        "assets/duration.js-Cdgr9Q-q.js",
+        "assets/calculator.js-CYgJr0Uy.js",
+        "assets/storage.js-h93Mtc7C.js",
+        "assets/logger.js-D3ax7xsl.js",
+        "assets/taskIdentity.js-WfxYOkMX.js",
+        "assets/tasks.js-Cg3caWm1.js",
+        "assets/timelineDebug.js-CuLUDie3.js",
+        "assets/taskParser.js-w_0p5D7o.js",
+        "assets/content.js-M9DgwEsi.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}

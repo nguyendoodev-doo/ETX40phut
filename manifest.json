@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Botbanhang",
+  "version": "2.4.0",
+  "description": "Theo dõi KPI thời gian Chủ động & Bị động từ Timeboxing hàng ngày. By Botbanhang.",
+  "permissions": ["storage", "notifications", "activeTab", "scripting", "webNavigation", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16":  "assets/icon16.png",
+    "32":  "assets/icon32.png",
+    "48":  "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "background": { "service_worker": "src/background/serviceWorker.js" },
+  "action": {
+    "default_title": "Botbanhang",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16":  "assets/icon16.png",
+      "32":  "assets/icon32.png",
+      "48":  "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "options_page": "src/options/options.html",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": [
+      "src/config.js",
+      "src/utils/duration.js",
+      "src/utils/calculator.js",
+      "src/utils/storage.js",
+      "src/utils/logger.js",
+      "src/utils/taskIdentity.js",
+      "src/utils/taskNotification.js",
+      "src/mock/tasks.js",
+      "src/content/timelineDebug.js",
+      "src/content/taskParser.js",
+      "src/content/content.js"
+    ],
+    "run_at": "document_idle",
+    "all_frames": true,
+    "match_about_blank": true
+  }]
+}

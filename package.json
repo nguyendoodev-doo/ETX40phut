@@ -1,0 +1,17 @@
+{
+  "name": "task-kpi-extension",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run-tests.js && node tests/test-task-notification.js"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}

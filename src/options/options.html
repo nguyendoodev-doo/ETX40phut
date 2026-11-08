@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cài đặt Task KPI</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>Cài đặt Task KPI</h1>
+    <p>KPI được lưu theo phút và áp dụng ngay cho popup lẫn panel.</p>
+    <div id="permissionWarning" style="display:none; color: #b91c1c; background: #fee2e2; border: 1px solid #f87171; padding: 10px 12px; border-radius: 6px; margin-bottom: 16px; font-size: 13px; line-height: 1.4;">
+      ⚠️ <strong>Cảnh báo quyền thông báo:</strong> Trình duyệt đang chặn thông báo từ Extension. Vui lòng mở <em>Cài đặt Chrome &gt; Quyền riêng tư và bảo mật &gt; Cài đặt trang web &gt; Thông báo</em> để cấp quyền cho phép Extension gửi Desktop Notification.
+    </div>
+    <form id="form">
+      <label>Chủ động (phút)
+        <input id="activeTarget" type="number" min="0" required>
+      </label>
+      <label>Bị động (phút)
+        <input id="passiveTarget" type="number" min="0" required>
+      </label>
+      <label>Thời gian thông báo task (phút)
+        <input id="taskNotificationMinutes" type="number" min="1" required>
+      </label>
+      <label class="check">
+        <input id="taskNotificationEnabled" type="checkbox"> Bật thông báo Desktop khi task đạt đủ thời gian
+      </label>
+      <label class="check">
+        <input id="showOverlay" type="checkbox"> Hiển thị panel trên website
+      </label>
+      <label class="check">
+        <input id="showPrediction" type="checkbox"> Hiển thị dự đoán giờ đạt KPI
+      </label>
+      <label class="check">
+        <input id="notificationsEnabled" type="checkbox"> Bật thông báo khi vừa đạt KPI ngày
+      </label>
+      <button type="submit">Lưu cài đặt</button>
+      <span id="message"></span>
+    </form>
+    <aside>
+      <b>Lưu ý:</b> Thời gian thông báo task mặc định là 40 phút. Mỗi task đạt đủ thời gian sẽ nhận được 1 Desktop Notification trong ngày.
+    </aside>
+  </main>
+  <script src="../config.js"></script>
+  <script src="../utils/storage.js"></script>
+  <script src="../utils/taskNotification.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
