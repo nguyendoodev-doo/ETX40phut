@@ -32,6 +32,7 @@
       "src/utils/storage.js",
       "src/utils/logger.js",
       "src/utils/taskIdentity.js",
+      "src/utils/telegram.js",
       "src/utils/taskNotification.js",
       "src/mock/tasks.js",
       "src/content/timelineDebug.js",

@@ -3,6 +3,7 @@ importScripts(
   "../utils/duration.js",
   "../utils/calculator.js",
   "../utils/taskIdentity.js",
+  "../utils/telegram.js",
   "../utils/taskNotification.js"
 );
 

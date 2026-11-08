@@ -27,6 +27,9 @@
       notificationsEnabled: false,
       taskNotificationEnabled: true,
       taskNotificationMinutes: 40,
+      telegramNotificationEnabled: false,
+      telegramBotToken: "",
+      telegramChatId: "",
       autoTimeboxingEnabled: true,
       autoTimeboxingDryRun: false
     })

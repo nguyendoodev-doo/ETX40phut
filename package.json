@@ -2,7 +2,7 @@
   "name": "task-kpi-extension",
   "private": true,
   "scripts": {
-    "test": "node tests/run-tests.js && node tests/test-task-notification.js"
+    "test": "node tests/run-tests.js && node tests/test-task-notification.js && node tests/test-telegram-notification.js"
   },
   "devDependencies": {
     "@types/react": "^19.3.0",
