@@ -21,14 +21,38 @@ task-kpi-extension/
 
 Luồng dữ liệu: `DOM → taskParser → task[] chuẩn hóa → calculateStats → UI`. Website là nguồn chính; cache được tách bằng khóa ngày địa phương và không cộng dồn giữa các ngày.
 
+## Tính năng Desktop Notification cho Task
+
+- Tự động theo dõi thời gian thực tế của từng task độc lập.
+- **Ngưỡng mặc định:** 40 phút/task (dễ dàng thay đổi thành 30m, 60m,... trong trang Cài đặt / Options).
+- Khi thời gian thực hiện của một task đạt từ 40 phút trở lên, Extension tự động gửi thông báo Desktop Notification:
+  - **Tiêu đề:** `🔔 TASK ĐÃ ĐỦ THỜI GIAN!`
+  - **Nội dung:**
+    ```text
+    Task: [Tên task]
+
+    Thời gian thực hiện: [Thời gian hiện tại]/40 phút.
+
+    Bạn đã hoàn thành đủ thời gian cho task này!
+    ```
+- **Quy tắc:**
+  - Mỗi task được quản lý bằng ID duy nhất, gửi thông báo độc lập.
+  - Mỗi task chỉ gửi 1 lần duy nhất trong ngày; không lặp lại khi thời gian tăng lên 41, 42, 50, 60 phút.
+  - Hoạt động ngầm qua Background Service Worker & Alarm 1 phút, không phụ thuộc vào việc mở popup.
+  - Tự động làm mới trạng thái khi sang ngày mới để tiếp tục thông báo cho các task của ngày hôm sau.
+
 ## Chạy test
 
-Cần Node.js, không cần cài package:
+Cần Node.js, không cần cài thêm package phụ thuộc:
 
-```powershell
+```bash
 cd task-kpi-extension
-npm.cmd test
+npm test
 ```
+
+Bộ test bao gồm:
+- `tests/run-tests.js`: Kiểm tra logic bóc tách task, nhận diện loại Chủ động/Bị động và tính toán KPI.
+- `tests/test-task-notification.js`: Kiểm thử tự động toàn diện 10 trường hợp nghiệp vụ của Desktop Notification (đạt 100%).
 
 ## Load unpacked trên Chrome
 
