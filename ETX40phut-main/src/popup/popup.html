@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botbanhang</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="debug.css">
+</head>
+<body>
+  <main class="dashboard">
+    <header id="header"></header>
+    <div id="status" class="debug-status" hidden></div>
+    <div id="content" aria-live="polite"></div>
+    <footer id="footer"></footer>
+    <details id="debugPanel" hidden>
+      <summary>Chẩn đoán</summary>
+      <div class="debug-actions"><button id="copyLogs" type="button">Sao chép log</button><button id="clearLogs" type="button">Xóa log</button></div>
+      <pre id="logs">Chưa có log.</pre>
+    </details>
+  </main>
+  <script src="../config.js"></script><script src="../utils/duration.js"></script><script src="../utils/calculator.js"></script><script src="../utils/storage.js"></script><script src="../utils/logger.js"></script><script src="../utils/taskIdentity.js"></script><script src="../utils/taskNotification.js"></script><script src="../mock/tasks.js"></script><script src="../content/timelineDebug.js"></script><script src="popup.js"></script>
+</body>
+</html>

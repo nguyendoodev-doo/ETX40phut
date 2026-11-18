@@ -1,0 +1,10 @@
+(function (root) {
+  const api = root.TaskKpi = root.TaskKpi || {};
+  api.MOCK_TASKS = [
+    { id: "mock-1", name: "KẾ HOẠCH NGÀY 21", type: "active", durationMinutes: 1, status: "completed", startedAt: null, expectedEndAt: null },
+    { id: "mock-2", name: "THAM GIA MEETING - AI BUSINESS", type: "active", durationMinutes: 173, status: "completed", startedAt: null, expectedEndAt: null },
+    { id: "mock-3", name: "HỖ TRỢ - ANH TUẤN", type: "passive", durationMinutes: 118, status: "completed", startedAt: null, expectedEndAt: null },
+    { id: "mock-4", name: "HỖ TRỢ - CÔ ORGANIC", type: "passive", durationMinutes: 63, status: "running", startedAt: "10:25", expectedEndAt: "14:25" },
+    { id: "mock-5", name: "TEST AI", type: "active", durationMinutes: 0, status: "not_completed", startedAt: null, expectedEndAt: null }
+  ];
+})(typeof globalThis !== "undefined" ? globalThis : this);

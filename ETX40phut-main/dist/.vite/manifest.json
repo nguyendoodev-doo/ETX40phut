@@ -1,0 +1,129 @@
+{
+  "../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-Db1Riz4H.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_calculator.js-loader-2FtiplFB.js": {
+    "file": "assets/calculator.js-loader-2FtiplFB.js",
+    "src": "_calculator.js-loader-2FtiplFB.js"
+  },
+  "_duration.js-loader-qGtPEMj_.js": {
+    "file": "assets/duration.js-loader-qGtPEMj_.js",
+    "src": "_duration.js-loader-qGtPEMj_.js"
+  },
+  "_rolldown-runtime-CbXtAM7H.js": {
+    "file": "assets/rolldown-runtime-CbXtAM7H.js",
+    "name": "rolldown-runtime"
+  },
+  "_taskIdentity.js-loader-CLAJusqA.js": {
+    "file": "assets/taskIdentity.js-loader-CLAJusqA.js",
+    "src": "_taskIdentity.js-loader-CLAJusqA.js"
+  },
+  "_taskParser.js-loader-B_L83yr8.js": {
+    "file": "assets/taskParser.js-loader-B_L83yr8.js",
+    "src": "_taskParser.js-loader-B_L83yr8.js"
+  },
+  "_timelineDebug.js-loader-uY9OfYK_.js": {
+    "file": "assets/timelineDebug.js-loader-uY9OfYK_.js",
+    "src": "_timelineDebug.js-loader-uY9OfYK_.js"
+  },
+  "popup.html": {
+    "file": "assets/popup.html-CqXPM_Kx.js",
+    "name": "popup.html",
+    "src": "popup.html",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ],
+    "css": [
+      "assets/popup-B6xpMHTr.css"
+    ]
+  },
+  "src/background/serviceWorker.js": {
+    "file": "assets/serviceWorker.js-D90SJTiR.js",
+    "name": "serviceWorker.js",
+    "src": "src/background/serviceWorker.js",
+    "isEntry": true
+  },
+  "src/config.js": {
+    "file": "assets/config.js-sX9choKx.js",
+    "name": "config.js",
+    "src": "src/config.js",
+    "isEntry": true
+  },
+  "src/content/content.js": {
+    "file": "assets/content.js-M9DgwEsi.js",
+    "name": "content.js",
+    "src": "src/content/content.js",
+    "isEntry": true
+  },
+  "src/content/taskParser.js": {
+    "file": "assets/taskParser.js-w_0p5D7o.js",
+    "name": "taskParser.js",
+    "src": "src/content/taskParser.js",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ]
+  },
+  "src/content/timelineDebug.js": {
+    "file": "assets/timelineDebug.js-CuLUDie3.js",
+    "name": "timelineDebug.js",
+    "src": "src/content/timelineDebug.js",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ]
+  },
+  "src/mock/tasks.js": {
+    "file": "assets/tasks.js-Cg3caWm1.js",
+    "name": "tasks.js",
+    "src": "src/mock/tasks.js",
+    "isEntry": true
+  },
+  "src/options/options.html": {
+    "file": "assets/options-DO6w_uco.css",
+    "src": "src/options/options.html"
+  },
+  "src/utils/calculator.js": {
+    "file": "assets/calculator.js-CYgJr0Uy.js",
+    "name": "calculator.js",
+    "src": "src/utils/calculator.js",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ]
+  },
+  "src/utils/duration.js": {
+    "file": "assets/duration.js-Cdgr9Q-q.js",
+    "name": "duration.js",
+    "src": "src/utils/duration.js",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ]
+  },
+  "src/utils/logger.js": {
+    "file": "assets/logger.js-D3ax7xsl.js",
+    "name": "logger.js",
+    "src": "src/utils/logger.js",
+    "isEntry": true
+  },
+  "src/utils/storage.js": {
+    "file": "assets/storage.js-h93Mtc7C.js",
+    "name": "storage.js",
+    "src": "src/utils/storage.js",
+    "isEntry": true
+  },
+  "src/utils/taskIdentity.js": {
+    "file": "assets/taskIdentity.js-WfxYOkMX.js",
+    "name": "taskIdentity.js",
+    "src": "src/utils/taskIdentity.js",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-CbXtAM7H.js"
+    ]
+  }
+}

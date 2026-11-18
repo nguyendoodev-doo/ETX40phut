@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="flagBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C51A13"/>
+      <stop offset="45%" stop-color="#DA251D"/>
+      <stop offset="100%" stop-color="#EA2B22"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" ry="7" fill="url(#flagBg)"/>
+  <polygon points="16.00,6.50 18.13,13.06 25.04,13.06 19.45,17.12 21.58,23.69 16.00,19.63 10.42,23.69 12.55,17.12 6.96,13.06 13.87,13.06" fill="#FFFF00"/>
+</svg>
